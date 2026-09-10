@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Men",
+    "description": "Modern essentials",
+    "image":
+      "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85"
+  },
+  {
+    "name": "Women",
+    "description": "Effortless elegance",
+    "image":
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85"
+  },
+  {
+    "name": "Shoes",
+    "description": "Step into style",
+    "image":
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+  },
+  {
+    "name": "Accessories",
+    "description": "Complete your look",
+    "image":
+      "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85"
+  }
+]
