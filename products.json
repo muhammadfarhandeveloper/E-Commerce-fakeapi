@@ -23,7 +23,7 @@
     "badge": "New",
     "short_desc": "Elegant everyday dress designed for effortless comfort and modern simplicity.",
     "long_description": "A beautifully minimal dress created for women who appreciate clean silhouettes and effortless elegance. The comfortable design transitions easily from daytime activities to casual evening occasions.",
-    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85"
+    "image": "https://plus.unsplash.com/premium_photo-1776148071906-879cf0afa1cb?q=80&w=387&auto=format&fit=crop&w=900&q=85"
   },
   {
     "id": 3,
@@ -75,7 +75,7 @@
     "badge": "New",
     "short_desc": "Lightweight linen outfit offering relaxed style and breathable comfort.",
     "long_description": "Perfect for warm days, this relaxed linen outfit offers a lightweight feel and effortlessly stylish appearance. Its breathable-inspired design is ideal for vacations, casual gatherings, and everyday summer dressing.",
-    "image": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=85"
+    "image": "https://images.unsplash.com/photo-1671866683421-b424d9b86c6c?q=85&w=900&auto=format&fit=crop"
   },
   {
     "id": 7,
@@ -170,16 +170,16 @@
   },
   {
     "id": 14,
-    "name": "Satin Evening Top",
+    "name": "Gray Long Sleeve Dress",
     "category": "Women",
     "price": 64,
     "oldPrice": 85,
     "rating": 4.7,
     "reviews": 58,
     "badge": "New",
-    "short_desc": "Elegant satin top adding refined shine to evening looks.",
-    "long_description": "An elegant satin-inspired top designed to bring subtle sophistication to your wardrobe. Its refined appearance works beautifully with tailored trousers, skirts, or denim for elevated evening styling.",
-    "image": "https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=900&q=85"
+    "short_desc": "Elegant long sleeve dress adding refined shine to evening looks.",
+    "long_description": "An elegant long sleeve dress designed to bring subtle sophistication to your wardrobe. Its refined appearance works beautifully with tailored trousers, or denim for elevated evening styling.",
+    "image": "https://images.unsplash.com/photo-1629936060120-e38e75bb2784?q=85&w=900&auto=format&fit=crop"
   },
   {
     "id": 15,
@@ -222,16 +222,16 @@
   },
   {
     "id": 18,
-    "name": "Flowy Midi Skirt",
+    "name": "Black Abaya with Jewelry",
     "category": "Women",
     "price": 69,
     "oldPrice": 89,
     "rating": 4.8,
     "reviews": 61,
     "badge": "Trending",
-    "short_desc": "Flowy midi skirt creating feminine movement with effortless elegance.",
-    "long_description": "This flowy midi skirt creates an elegant silhouette with natural movement. Pair it with simple tops, sweaters, or blouses to create feminine looks suitable for everyday and special occasions.",
-    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a13d27?auto=format&fit=crop&w=900&q=85"
+    "short_desc": "Black Abaya with Jewelry creating feminine movement with effortless elegance.",
+    "long_description": "This Black Abaya with Jewelry creates an elegant silhouette with natural movement. Pair it with simple tops, sweaters to create feminine looks suitable for everyday and special occasions.",
+    "image": "https://plus.unsplash.com/premium_photo-1776296624489-73957e54bcef?q=85&w=900&auto=format&fit=crop"
   },
   {
     "id": 19,
