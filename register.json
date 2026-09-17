@@ -1,0 +1,11 @@
+{
+    "success": true,
+    "message": "Registration successful",
+    "user": {
+        "id": 101,
+        "name": "Muhammad Farhan",
+        "email": "muhammadfarhan.developer@gmail.com",
+        "username": "muhammadfarhan",
+        "role": "customer"
+    }
+}

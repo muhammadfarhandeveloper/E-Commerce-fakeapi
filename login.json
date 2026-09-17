@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "message": "Login successful",
+    "user": {
+        "id": 101,
+        "name": "Muhammad Farhan",
+        "email": "muhammadfarhan.developer@gmail.com",
+        "username": "muhammadfarhan",
+        "role": "customer"
+    },
+    "token": "fake_register_token_abcdef1234567890",
+    "token_type": "Bearer"
+}

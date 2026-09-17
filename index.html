@@ -35,6 +35,9 @@
                         <a class="nav-link text-white" href="#endpoints">Endpoints</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#register-login">Register/Login</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#javascript">JavaScript</a>
                     </li>
                     <li class="nav-item">
@@ -294,6 +297,114 @@
 
             </div>
 
+            <div class="row g-4 mt-2" id="register-login">
+
+                <!-- Register -->
+                <div class="col-lg-6">
+
+                    <div class="card endpoint-card p-4">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+
+                            <h4 class="mb-0">
+                                Register
+                            </h4>
+                            <div class="d-flex">
+
+                                <span class="method">
+                                    GET
+                                </span>
+                                <a href="https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/register.json"
+                                    target="_blank" class="ms-2  method bg-primary">
+                                    LIVE <i class="ms-1 fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <p class="text-muted">
+                            Returns a registration user.
+                        </p>
+
+                        <div class="api-url bg-light text-dark mb-3" style="user-select: all;">
+                            https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/register.json
+                        </div>
+
+                        <h6>Example Response</h6>
+
+                        <pre><code class="language-json"> 
+{
+    "success": true,
+    "message": "Registration successful",
+    "user": {
+        "id": 101,
+        "name": "Muhammad Farhan",
+        "email": "muhammadfarhan.developer@gmail.com",
+        "username": "muhammadfarhan",
+        "role": "customer"
+    }
+}
+</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Login  -->
+                <div class="col-lg-6">
+
+                    <div class="card endpoint-card p-4">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+
+                            <h4 class="mb-0">
+                                Login
+                            </h4>
+                            <div class="d-flex">
+
+                                <span class="method">
+                                    GET
+                                </span>
+                                <a href="https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/login.json"
+                                    target="_blank" class="ms-2  method bg-primary">
+                                    LIVE <i class="ms-1 fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <p class="text-muted">
+                            Returns a login user with Token.
+                        </p>
+
+                        <div class="api-url bg-light text-dark mb-3" style="user-select: all;">
+                            https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/login.json
+                        </div>
+
+                        <h6>Example Response</h6>
+
+                        <pre><code class="language-json">
+{
+    "success": true,
+    "message": "Login successful",
+    "user": {
+        "id": 101,
+        "name": "Muhammad Farhan",
+        "email": "muhammadfarhan.developer@gmail.com",
+        "username": "muhammadfarhan",
+        "role": "customer"
+    },
+    "token": "fake_register_token_abcdef1234567890",
+    "token_type": "Bearer"
+}</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -419,6 +530,67 @@ getProducts();</code></pre>
 
             </div>
 
+            <div class="card border-0 shadow-sm mb-4">
+
+                <div class="card-body p-4">
+
+                    <h5 class="mb-3">
+                        4. User Registration
+                    </h5>
+
+                    <div class="code-wrapper">
+
+                        <button class="btn btn-sm btn-light copy-btn" onclick="copyCode('registerCode')">
+                            Copy
+                        </button>
+
+                        <pre id="registerCode"><code class="language-javascript">fetch('https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/register.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        console.log(data.message);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4">
+
+                <div class="card-body p-4">
+
+                    <h5 class="mb-3">
+                        5. User Login
+                    </h5>
+
+                    <div class="code-wrapper">
+
+                        <button class="btn btn-sm btn-light copy-btn" onclick="copyCode('loginCode')">
+                            Copy
+                        </button>
+
+                        <pre id="loginCode"><code class="language-javascript">fetch('https://muhammadfarhandeveloper.github.io/E-Commerce-fakeapi/login.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        console.log(data.message);
+        console.log(data.token); // bearer Fake token 
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -497,7 +669,7 @@ loadProducts();
 
                 </div>
 
-            </div>  
+            </div>
 
         </div>
     </section>
@@ -588,7 +760,7 @@ loadProducts();
     <div class="modal fade" id="copySuccessModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered modal-md">
             <div class="modal-content border-0 shadow-lg rounded-4">
-                <div class="modal-body text-center p-4"> 
+                <div class="modal-body text-center p-4">
                     <div class="copy-success-icon mx-auto mb-3"> <span>✓</span> </div>
                     <h5 class="fw-bold mb-2"> Code Copied! </h5>
                     <p class="text-muted mb-4"> The code snippet has been copied to your clipboard successfully. </p>
@@ -653,38 +825,38 @@ loadProducts();
 
 
         // Copy Code Function
-        
-function copyCode(elementId) {
 
-    const code = document.getElementById(elementId).innerText;
+        function copyCode(elementId) {
 
-    navigator.clipboard.writeText(code)
-        .then(() => {
+            const code = document.getElementById(elementId).innerText;
 
-            // Bootstrap Modal
-            const modalElement =
-                document.getElementById('copySuccessModal');
+            navigator.clipboard.writeText(code)
+                .then(() => {
 
-            const copyModal =
-                bootstrap.Modal.getOrCreateInstance(modalElement);
+                    // Bootstrap Modal
+                    const modalElement =
+                        document.getElementById('copySuccessModal');
 
-            copyModal.show();
+                    const copyModal =
+                        bootstrap.Modal.getOrCreateInstance(modalElement);
 
-            // Automatically close after 2 seconds
-            setTimeout(() => {
-                copyModal.hide();
-            }, 2000);
+                    copyModal.show();
 
-        })
-        .catch(error => {
+                    // Automatically close after 2 seconds
+                    setTimeout(() => {
+                        copyModal.hide();
+                    }, 2000);
 
-            console.error(
-                'Unable to copy code:',
-                error
-            );
+                })
+                .catch(error => {
 
-        });
-}
+                    console.error(
+                        'Unable to copy code:',
+                        error
+                    );
+
+                });
+        }
 
     </script>
 
